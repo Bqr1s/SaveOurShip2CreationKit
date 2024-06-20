@@ -14,4 +14,4 @@ OG Testing Squad: Buns Buns Cat, Phsarjk, i am has yes, Fuji, Reviire, Ian, Gene
 
 The upstream repository containing the community-maintained version can be found at (https://github.com/SonicTHI/SaveOurShip2CreationKit).
 
-Thanks to the Gibberlings3 for uploading and maintaining Community Commons and providing fantastic [templates](https://github.com/Gibberlings3/GitHub-Templates) and tutorials on ensuring that modding remains compliant with the law.
+Thanks to the Gibberlings3 for providing modding-focused Community Commons license [templates](https://github.com/Gibberlings3/GitHub-Templates) and tutorials on ensuring that modding remains compliant with the law.
