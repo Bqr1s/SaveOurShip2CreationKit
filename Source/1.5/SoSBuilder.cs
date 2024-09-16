@@ -250,14 +250,17 @@ namespace SaveOurShip2
 			});
 			Log.Message("Resaved ship as: " + shipDef.fileName + ".xml");
 		}
-		public static void GenerateShip(ShipDef shipDef, bool rotate = false)
+		public static Map GenerateShip(Map map, ShipDef shipDef, bool rotate = false)
 		{
-			Map map = GetOrGenerateMapUtility.GetOrGenerateMap(ShipInteriorMod2.FindWorldTile(), new IntVec3(250, 1, 250), DefDatabase<WorldObjectDef>.GetNamed("ShipEnemy"));
+			if (map == null)
+			{
+				map = GetOrGenerateMapUtility.GetOrGenerateMap(ShipInteriorMod2.FindWorldTile(), new IntVec3(250, 1, 250), DefDatabase<WorldObjectDef>.GetNamed("ShipEnemy"));
+				((WorldObjectOrbitingShip)map.Parent).Radius = 150;
+				((WorldObjectOrbitingShip)map.Parent).Theta = ((WorldObjectOrbitingShip)Find.CurrentMap.Parent).Theta - Rand.RangeInclusive(1, 10) * 0.01f;
+			}
 			map.fogGrid.ClearAllFog();
 			map.GetComponent<ShipMapComp>().CacheOff = true;
 			map.GetComponent<ShipMapComp>().ShipMapState = ShipMapState.isGraveyard;
-			((WorldObjectOrbitingShip)map.Parent).Radius = 150;
-			((WorldObjectOrbitingShip)map.Parent).Theta = ((WorldObjectOrbitingShip)Find.CurrentMap.Parent).Theta - Rand.RangeInclusive(1, 10) * 0.01f;
 
 			IntVec3 c = map.Center;
 			if (shipDef.saveSysVer == 2)
@@ -437,6 +440,7 @@ namespace SaveOurShip2
 			//	map.mapDrawer.RegenerateEverythingNow();
 			map.GetComponent<ShipMapComp>().RecacheMap();
 			CameraJumper.TryJump(map.Center, map);
+			return map;
 		}
 		public static void ExportShip(Map map, bool resave = false)
 		{

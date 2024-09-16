@@ -45,7 +45,7 @@ namespace SaveOurShip2
 			ShipDef shipDef = DefDatabase<ShipDef>.GetNamed(name);
 			if (shipDef == null)
 				return;
-			SoSBuilder.GenerateShip(shipDef);
+			SoSBuilder.GenerateShip(null, shipDef);
 		}
 	}
 }

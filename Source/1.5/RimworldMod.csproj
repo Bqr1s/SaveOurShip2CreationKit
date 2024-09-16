@@ -44,6 +44,8 @@
     <Compile Include="CompProps_NameMe.cs" />
     <Compile Include="Designator_ExportBlueprint.cs" />
     <Compile Include="Designator_ExportFleet.cs" />
+    <Compile Include="Designator_ExportScreenshots.cs" />
+    <Compile Include="Designator_ExportShipsSpreadsheet.cs" />
     <Compile Include="Designator_ReSaveAll.cs" />
     <Compile Include="Designator_ExportShip.cs" />
     <Compile Include="Designator_ExportShipRe.cs" />
@@ -60,15 +62,14 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="0Harmony">
-      <HintPath>..\..\..\2009463077 Harmony\Current\Assemblies\0Harmony.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\workshop\content\294100\2009463077\1.4\Assemblies\0Harmony.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\SaveOurShip2\Source\1.5\obj\Debug\PublicizedAssemblies\Assembly-CSharp.A2BC99B9C859B1906585B39733D2DED5\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="ShipsHaveInsides">
-      <HintPath>..\..\..\SaveOurShip2Experimental\1.5\Assemblies\ShipsHaveInsides.dll</HintPath>
+      <HintPath>..\..\..\SaveOurShip2\1.5\Assemblies\ShipsHaveInsides.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -88,6 +89,9 @@
     <Reference Include="UnityEngine.IMGUIModule">
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
       <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.ScreenCaptureModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TextCoreModule">
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TextCoreModule.dll</HintPath>
