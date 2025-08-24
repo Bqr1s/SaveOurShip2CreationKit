@@ -7,7 +7,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>RimworldMod</RootNamespace>
     <AssemblyName>SoSBuilder</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <BaseDirectory>..\..\1.5\Assemblies</BaseDirectory>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -15,7 +15,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\1.5\Assemblies</OutputPath>
+    <OutputPath>..\..\1.6\Assemblies\</OutputPath>
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -26,7 +26,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <DebugType>full</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\1.5\Assemblies</OutputPath>
+    <OutputPath>..\..\1.6\Assemblies</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
@@ -66,10 +66,11 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\SaveOurShip2\Source\1.5\obj\Debug\PublicizedAssemblies\Assembly-CSharp.A2BC99B9C859B1906585B39733D2DED5\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+	  <Private>False</Private>
     </Reference>
     <Reference Include="ShipsHaveInsides">
-      <HintPath>..\..\..\SaveOurShip2\1.5\Assemblies\ShipsHaveInsides.dll</HintPath>
+      <HintPath>..\..\..\SaveOurShip2\1.6\Assemblies\ShipsHaveInsides.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -92,9 +93,6 @@
     </Reference>
     <Reference Include="UnityEngine.ScreenCaptureModule">
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.ScreenCaptureModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TextCoreModule">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TextCoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.TextRenderingModule">
@@ -102,7 +100,19 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Vehicles">
-      <HintPath>..\..\..\3014915404 Vehicle Framework\1.5\Assemblies\Vehicles.dll</HintPath>
+      <HintPath>..\..\..\Vehicle-Framework\1.6\Assemblies\Vehicles.dll</HintPath>
+	  <Private>False</Private>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Krafs.Publicizer">
+      <Version>2.3.0</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Publicize Include="Assembly-CSharp" IncludeVirtualMembers="false" />
+    <Publicize Include="Vehicles" IncludeVirtualMembers="true" />
   </ItemGroup>
 </Project>

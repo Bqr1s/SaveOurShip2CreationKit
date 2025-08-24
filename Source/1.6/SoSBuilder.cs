@@ -254,7 +254,7 @@ namespace SaveOurShip2
 		{
 			if (map == null)
 			{
-				map = GetOrGenerateMapUtility.GetOrGenerateMap(ShipInteriorMod2.FindWorldTile(), new IntVec3(250, 1, 250), DefDatabase<WorldObjectDef>.GetNamed("ShipEnemy"));
+				map = GetOrGenerateMapUtility.GetOrGenerateMap(ShipInteriorMod2.FindWorldTile(false), new IntVec3(250, 1, 250), DefDatabase<WorldObjectDef>.GetNamed("ShipEnemy"));
 				((WorldObjectOrbitingShip)map.Parent).Radius = 150;
 				((WorldObjectOrbitingShip)map.Parent).Theta = ((WorldObjectOrbitingShip)Find.CurrentMap.Parent).Theta - Rand.RangeInclusive(1, 10) * 0.01f;
 			}
