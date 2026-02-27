@@ -35,6 +35,7 @@
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
+    <Compile Include="BlueprintMaker.cs" />
     <Compile Include="Building_ShipRegion.cs" />
     <Compile Include="Building_ShipRect.cs" />
     <Compile Include="Building_ShipCircle.cs" />
@@ -67,7 +68,7 @@
     </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
-	  <Private>False</Private>
+      <Private>False</Private>
     </Reference>
     <Reference Include="ShipsHaveInsides">
       <HintPath>..\..\..\SaveOurShip2\1.6\Assemblies\ShipsHaveInsides.dll</HintPath>
@@ -101,7 +102,7 @@
     </Reference>
     <Reference Include="Vehicles">
       <HintPath>..\..\..\Vehicle-Framework\1.6\Assemblies\Vehicles.dll</HintPath>
-	  <Private>False</Private>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>

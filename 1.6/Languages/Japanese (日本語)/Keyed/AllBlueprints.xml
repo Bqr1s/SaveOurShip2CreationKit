@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<!-- Text for generating all blueprints submod XML -->
+	<!-- English: ship blueprint ({0})-->
+	<SoS.CK.BlueprintLabel>{0}の設計図</SoS.CK.BlueprintLabel>
+	<!-- English: a three stage reusable blueprint that can be used to build a complete space ship as long as one is capable of constructing the individual parts. Can be customized at any point but the next stage will only place prints when the required parts under them are already built.\nCombat rating: {0}\nShip size: {1}x{2}-->
+	<SoS.CK.BlueprintDesc>3段階の再利用可能な設計図。個々のパーツを組み立てることができれば、宇宙船全体を建造できます。どの段階でもカスタマイズ可能ですが、次の段階では、必要なパーツが既に組み立てられている場合にのみ設計図が配置されます。\n戦闘力:  {0}\n宇宙船のサイズ: {1}x{2}</SoS.CK.BlueprintDesc>
+</LanguageData>
