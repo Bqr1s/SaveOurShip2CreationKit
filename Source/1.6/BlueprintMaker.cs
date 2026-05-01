@@ -54,15 +54,12 @@ namespace SaveOurShip2
                 string description = TranslatorFormattedStringExtensions.Translate("SoS.CK.BlueprintDesc", ship.combatPoints, ship.sizeX, ship.sizeZ);
                 result += String.Format(template, bpDefName, label, description, ship.defName);
                 count++;
-                if (count > 10)
-                {
-                    // break;
-                }
             }
             result += ending;
             string resultPath = Path.Combine(GenFilePaths.SaveDataFolderPath, "Sos2Allblueprints", "AllBlueprints.xml");
             File.WriteAllText(resultPath, result);
             Messages.Message("File created: " + resultPath, MessageTypeDefOf.NeutralEvent);
+            Messages.Message("Blueprints created: " + count, MessageTypeDefOf.NeutralEvent);
         }
     }
 	public class BlueprintMaker
