@@ -18,9 +18,9 @@ namespace SaveOurShip2
 			Command_Action rename = new Command_Action
 			{
 				action = delegate
-							{
-								Find.WindowStack.Add(new Dialog_NamePawnDef(this));
-							},
+				{
+					Find.WindowStack.Add(new Dialog_SetSelectedSpawnersPawnkindDef());
+				},
 				defaultLabel = "Set PawnKindDef",
 				defaultDesc = "Select which pawn to spawn",
 				icon = ContentFinder<Texture2D>.Get("UI/Commands/RenameZone")
@@ -30,7 +30,7 @@ namespace SaveOurShip2
 			{
 				action = delegate
 				{
-					Find.WindowStack.Add(new Dialog_NameFactionDef(this));
+					Find.WindowStack.Add(new Dialog_SetSelectedSpawnersFaction());
 				},
 				defaultLabel = "Set factionDef",
 				defaultDesc = "Select factionDef to spawn as",
