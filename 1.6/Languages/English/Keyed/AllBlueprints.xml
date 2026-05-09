@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<!-- Text for generating all blueprints submod XML -->
+	<SoS.CK.BlueprintLabel>ship blueprint ({0})</SoS.CK.BlueprintLabel>
+	<SoS.CK.BlueprintDesc>a three stage reusable blueprint that can be used to build a complete space ship as long as one is capable of constructing the individual parts. Can be customized at any point but the next stage will only place prints when the required parts under them are already built.\nCombat rating: {0}\nShip size: {1}x{2}</SoS.CK.BlueprintDesc>
+</LanguageData>
