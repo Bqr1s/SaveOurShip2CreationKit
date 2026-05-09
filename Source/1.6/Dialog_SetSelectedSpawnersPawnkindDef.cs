@@ -13,8 +13,8 @@ namespace SaveOurShip2
 			if (string.IsNullOrEmpty(name))
 				return;
 
-			// Will rename all selected spawners, just easy implementation for one gizmo working for 
-			// renaming multiple objects using dialog.
+			// Will apply change to all selected spawners, just easy implementation for one gizmo working for 
+			// editing multiple objects using dialog.
 			List<ThingWithComps> things = Find.Selector.SelectedObjects.OfType<ThingWithComps>().ToList();
 			foreach(ThingWithComps thing in things)
 			{
