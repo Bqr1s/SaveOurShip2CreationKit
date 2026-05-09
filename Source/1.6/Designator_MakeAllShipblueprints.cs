@@ -13,7 +13,7 @@ namespace SaveOurShip2
 
 		public Designator_MakeAllShipblueprints()
 		{
-			defaultLabel = "Make all ship blueprints Ship";
+			defaultLabel = "Make all ship blueprints";
 			defaultDesc = "Generate a blueprint object for each ship in current language and save that to file. Click anywhere on the map to activate.";
 			icon = ContentFinder<Texture2D>.Get("UI/Save_XML");
 			soundDragSustain = SoundDefOf.Designate_DragStandard;

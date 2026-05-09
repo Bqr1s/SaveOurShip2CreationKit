@@ -14,8 +14,7 @@
 			<li>SaveOurShip2.Designator_ExportFleet</li>
 			<li>SaveOurShip2.Designator_ExportScreenshots</li>
 			<li>SaveOurShip2.Designator_ExportShipsSpreadsheet</li>
-			<!-- li>SaveOurShip2.Designator_ImportShipRotCclean</li>
-			<li>SaveOurShip2.Designator_ReSaveAll</li -->
+			<li>SaveOurShip2.Designator_MakeAllShipblueprints</li>
 		</specialDesignatorClasses>
 	</DesignationCategoryDef>
 </Defs>

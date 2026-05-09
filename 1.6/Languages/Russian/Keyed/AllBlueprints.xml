@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<!-- Text for generating all blueprints submod XML -->
+	<!-- English: ship blueprint ({0})-->
+	<SoS.CK.BlueprintLabel>Чертеж корабля {0}</SoS.CK.BlueprintLabel>
+	<!-- English: a three stage reusable blueprint that can be used to build a complete space ship as long as one is capable of constructing the individual parts. Can be customized at any point but the next stage will only place prints when the required parts under them are already built.\nCombat rating: {0}\nShip size: {1}x{2}-->
+	<SoS.CK.BlueprintDesc>Трехэтапный многоразовый чертеж, который можно использовать для постройки целого космического корабля, при условии, что вы способны изготовить отдельные его части. Его можно модифицировать на любом этапе, но на следующем этапе чертежи будут размещены только после того, как необходимые под ними детали будут уже изготовлены..\n Боевой рейтинг: {0}\nРазмер корабля: {1}x{2}</SoS.CK.BlueprintDesc>
+</LanguageData>
