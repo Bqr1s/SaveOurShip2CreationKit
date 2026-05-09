@@ -52,6 +52,8 @@
     <Compile Include="Designator_ExportShip.cs" />
     <Compile Include="Designator_ExportShipRe.cs" />
     <Compile Include="Dialog_NameFactionDef.cs" />
+    <Compile Include="Dialog_SetSelectedSpawnersFaction.cs" />
+    <Compile Include="Dialog_SetSelectedSpawnersPawnkindDef.cs" />
     <Compile Include="Obsolete\Designator_ExportShipReOld.cs" />
     <Compile Include="Obsolete\Designator_ExportShipLegacy.cs" />
     <Compile Include="Designator_ImportShipRotCclean.cs" />
